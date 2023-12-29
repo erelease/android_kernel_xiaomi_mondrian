@@ -266,7 +266,7 @@ extern bool qcom_scm_lmh_dcvsh_available(void);
 #include <linux/errno.h>
 
 static inline bool qcom_scm_is_available(void) { return false; }
-static void *qcom_get_scm_device(void) { return ERR_PTR(-ENODEV); }
+// static void *qcom_get_scm_device(void) { return ERR_PTR(-ENODEV); }
 static inline int qcom_scm_set_cold_boot_addr(void *entry,
 		const cpumask_t *cpus) { return -ENODEV; }
 static inline int qcom_scm_set_warm_boot_addr(void *entry,
